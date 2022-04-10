@@ -32,11 +32,11 @@ public class Main {
         System.out.println("Runtime: " + (double) (System.currentTimeMillis() - start) / 1000 + " seconds.");
     }
 
-    private static void quickSortInt(int[] array){
+    public static void quickSortInt(int[] array){
         quickSortInt(array, 0, array.length - 1);
     }
 
-    public static void quickSortInt(int[] array, int lowIndex, int highIndex){
+    private static void quickSortInt(int[] array, int lowIndex, int highIndex){
 
         if(lowIndex >= highIndex) return;
 
